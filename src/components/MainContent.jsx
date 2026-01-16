@@ -1,14 +1,14 @@
 function MainContent() {
     return (
         <main>
-            <div className="main-top">
+            <section className="main-top">
                 <div className="main-top-container">
                     <a className="main-top-link" href="#">
                         {"--> Content goes here <--"}
                     </a>
                 </div>
-            </div>
-            <div className="main-center">
+            </section>
+            <section className="main-center">
                 <ul className="main-center-list">
                     <li className="main-center-link">
                         <img src="/src/assets/img/buy-comics-digital-comics.png" alt="Comics Digital" />
@@ -31,7 +31,9 @@ function MainContent() {
                         <a href="#">DC POWER VISA</a>
                     </li>
                 </ul>
-            </div>
+            </section>
+            <section className="main-bottom"></section>
+
 
         </main >
     )
