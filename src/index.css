@@ -1,0 +1,51 @@
+/* Generics */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+.nav-logo img {
+  width: 80%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 70%;
+}
+
+.nav-link {
+  color: black;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid #0282F9;
+  color: #0282F9;
+}
