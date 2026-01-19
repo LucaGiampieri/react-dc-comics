@@ -21,6 +21,8 @@ a {
 
 /* Header */
 
+/* Navbar */
+
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -50,6 +52,15 @@ a {
 .nav-link:hover {
   border-bottom: 5px solid #0282F9;
   color: #0282F9;
+}
+
+/* Jumbotron */
+
+.header-jumbotron {
+  background-image: url(./assets/img/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
 }
 
 /* Main */
