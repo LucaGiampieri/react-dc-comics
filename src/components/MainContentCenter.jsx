@@ -1,27 +1,56 @@
 function MainContentCenter() {
+
+    const mainCenterLinks = [
+        {
+            id: 1,
+            label: "DIGITAL COMICS",
+            href: "#",
+            imgSrc: "/src/assets/img/buy-comics-digital-comics.png",
+            imgAlt: "Comics Digital"
+        },
+        {
+            id: 2,
+            label: "DC MERCHANDISE",
+            href: "#",
+            imgSrc: "/src/assets/img/buy-comics-merchandise.png",
+            imgAlt: "Comics Merchandise"
+        },
+        {
+            id: 3,
+            label: "SUBSCRIPTION",
+            href: "#",
+            imgSrc: "/src/assets/img/buy-comics-subscriptions.png",
+            imgAlt: "Comics Subscriptions"
+        },
+        {
+            id: 4,
+            label: "COMIC SHOP LOCATOR",
+            href: "#",
+            imgSrc: "/src/assets/img/buy-comics-shop-locator.png",
+            imgAlt: "Comics Shop Locator"
+        },
+        {
+            id: 5,
+            label: "DC POWER VISA",
+            href: "#",
+            imgSrc: "/src/assets/img/buy-dc-power-visa.svg",
+            imgAlt: "Dc Power Visa"
+        }
+    ];
+
+    function MainCenterLinkRender() {
+        return mainCenterLinks.map((link) => (
+            <li key={link.id} className="main-center-link">
+                <img src={link.imgSrc} alt={link.imgAlt} />
+                <a href={link.href}>{link.label}</a>
+            </li>
+        ))
+    }
+
     return (
         <section className="main-center">
             <ul className="main-center-list">
-                <li className="main-center-link">
-                    <img src="/src/assets/img/buy-comics-digital-comics.png" alt="Comics Digital" />
-                    <a href="#">DIGITAL COMICS</a>
-                </li>
-                <li className="main-center-link">
-                    <img src="/src/assets/img/buy-comics-merchandise.png" alt="Comics Merchandise" />
-                    <a href="#">DC MERCHANDISE</a>
-                </li>
-                <li className="main-center-link">
-                    <img src="/src/assets/img/buy-comics-subscriptions.png" alt="Comics Subscriptions" />
-                    <a href="#">SUBSCRIPTION</a>
-                </li>
-                <li className="main-center-link">
-                    <img src="/src/assets/img/buy-comics-shop-locator.png" alt="Comics Shop Locator" />
-                    <a href="#">COMIC SHOP LOCATOR</a>
-                </li>
-                <li className="main-center-link">
-                    <img src="/src/assets/img/buy-dc-power-visa.svg" alt="Dc Power Visa" />
-                    <a href="#">DC POWER VISA</a>
-                </li>
+                {MainCenterLinkRender(mainCenterLinks)}
             </ul>
         </section>
     )
