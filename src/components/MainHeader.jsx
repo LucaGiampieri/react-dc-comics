@@ -1,4 +1,4 @@
-import HeaderNavbar from "./HeaderNavbar"
+import HeaderNavbar from "./NavbarLinks/HeaderNavbar"
 import Jumbotron from "./Jumbotron"
 
 function MainHeader() {

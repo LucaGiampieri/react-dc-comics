@@ -1,3 +1,5 @@
+import NavbarLink from "./NavbarLink";
+
 function HeaderNavbar() {
 
     const navLinks = [
@@ -15,7 +17,10 @@ function HeaderNavbar() {
 
     function NavbarLinkRender() {
         return navLinks.map((link) => (
-            <li key={link.id}><a className="nav-link" href={link.href}>{link.label}</a></li>
+            <NavbarLink
+                key={link.id}
+                link={link}
+            />
         ))
     }
 
@@ -25,7 +30,7 @@ function HeaderNavbar() {
                 <img src="/dc-logo.png" alt="Logo" />
             </figure>
             <ul className="nav-list">
-                {NavbarLinkRender(navLinks)}
+                {NavbarLinkRender()}
             </ul>
         </nav>
     )
