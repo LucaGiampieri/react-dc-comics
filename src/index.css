@@ -61,6 +61,44 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.alert-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  position: relative;
+}
+
+.alert {
+  background-color: red;
+  padding: 3rem;
+  height: 130px;
+  border-radius: 50%;
+  position: absolute;
+  left: -130px;
+  top: 85px;
+}
+
+.alert-interno {
+  position: relative;
+}
+
+.alert-alert {
+  background-color: black;
+  display: block;
+  height: 30px;
+  width: 30px;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  left: -15px;
+  top: 5px;
+
 }
 
 /* Main */
