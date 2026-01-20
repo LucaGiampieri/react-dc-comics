@@ -1,15 +1,17 @@
 import comics from "./ComicsList"
+import ComicCard from "./ComicsCard"
 
 function MainContentTop() {
 
     function ComicCardRender() {
         return comics.map((comic) => (
-            <a key={comic.id} className="comic-card" href="#">
-                <figure>
-                    <img src={comic.thumb} alt={comic.title} />
-                </figure>
-                <div className="comic-card-title" >{comic.series.toLocaleUpperCase()}</div>
-            </a>
+            <ComicCard
+                key={comic.id}
+                thumb={comic.thumb}
+                series={comic.series}
+                title={comic.title}
+            />
+
         ))
     }
 
@@ -19,7 +21,7 @@ function MainContentTop() {
                 <div className="main-top-badge">
                     CURRENT SERIES
                 </div>
-                {ComicCardRender(comics)}
+                {ComicCardRender()}
             </div>
             <div className="main-top-button-container">
                 <a href="#" className="main-top-button">LOAD MORE</a>
