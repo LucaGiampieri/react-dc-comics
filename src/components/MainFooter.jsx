@@ -1,4 +1,4 @@
-import MainFooterTop from "./MainFooterTop"
+import MainFooterTop from "./FooterLinks/MainFooterTop"
 import MainFooterBottom from "./MainFooterBottom"
 
 function MainFooter() {

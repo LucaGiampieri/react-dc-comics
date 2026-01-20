@@ -1,3 +1,5 @@
+import FooterLink from "./FooterLink";
+
 function MainFooterTop() {
 
     const footerLinksComics = [
@@ -39,7 +41,10 @@ function MainFooterTop() {
 
     function NavbarLinkRender(links) {
         return links.map((link) => (
-            <li key={link.id}><a href={link.href}>{link.label}</a></li>
+            <FooterLink
+                key={link.id}
+                link={link}
+            />
         ))
     }
 
