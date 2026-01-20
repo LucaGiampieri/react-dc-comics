@@ -1,4 +1,4 @@
-import MainContentTop from "./MainContentTop"
+import MainContentTop from "./ComicsList/MainContentTop"
 import MainContentCenter from "./MainContentCenter"
 
 function MainContent() {
