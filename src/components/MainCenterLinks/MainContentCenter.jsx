@@ -1,3 +1,5 @@
+import MainCenterLink from "./MainCenterLink";
+
 function MainContentCenter() {
 
     const mainCenterLinks = [
@@ -40,17 +42,17 @@ function MainContentCenter() {
 
     function MainCenterLinkRender() {
         return mainCenterLinks.map((link) => (
-            <li key={link.id} className="main-center-link">
-                <img src={link.imgSrc} alt={link.imgAlt} />
-                <a href={link.href}>{link.label}</a>
-            </li>
+            <MainCenterLink
+                key={link.key}
+                link={link}
+            />
         ))
     }
 
     return (
         <section className="main-center">
             <ul className="main-center-list">
-                {MainCenterLinkRender(mainCenterLinks)}
+                {MainCenterLinkRender()}
             </ul>
         </section>
     )
