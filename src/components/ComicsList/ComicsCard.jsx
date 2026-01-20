@@ -1,14 +1,14 @@
 function ComicCard(props) {
 
     //destrutturiamo il props
-    const { id, thumb, title, series } = props
+    const { id, thumb, title, series } = props.comic
 
     return (
-        <a key={props.id} className="comic-card" href="#">
+        <a key={id} className="comic-card" href="#">
             <figure>
-                <img src={props.thumb} alt={props.title} />
+                <img src={thumb} alt={title} />
             </figure>
-            <div className="comic-card-title" >{props.series.toLocaleUpperCase()}</div>
+            <div className="comic-card-title" >{series.toLocaleUpperCase()}</div>
         </a>
     )
 }

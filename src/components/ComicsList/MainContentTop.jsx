@@ -7,11 +7,8 @@ function MainContentTop() {
         return comics.map((comic) => (
             <ComicCard
                 key={comic.id}
-                thumb={comic.thumb}
-                series={comic.series}
-                title={comic.title}
+                comic={comic}
             />
-
         ))
     }
 
