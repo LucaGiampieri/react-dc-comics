@@ -1,4 +1,4 @@
-import comics from "./ComicsList"
+import comics from "../../data/ComicsList"
 import ComicCard from "./ComicsCard"
 
 function MainContentTop() {

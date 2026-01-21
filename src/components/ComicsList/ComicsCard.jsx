@@ -4,7 +4,7 @@ function ComicCard(props) {
     const { id, thumb, title, series } = props.comic
 
     return (
-        <a key={id} className="comic-card" href="#">
+        <a className="comic-card" href="#">
             <figure>
                 <img src={thumb} alt={title} />
             </figure>
