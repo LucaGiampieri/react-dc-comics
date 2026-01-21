@@ -4,7 +4,7 @@ function NavbarLink(props) {
     const { id, href, label } = props.link
 
     return (
-        <li key={id}><a className="nav-link" href={href}>{label}</a></li>
+        <li><a className="nav-link" href={href}>{label}</a></li>
     )
 }
 

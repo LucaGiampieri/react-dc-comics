@@ -4,7 +4,7 @@ function FooterLink(props) {
     const { id, href, label } = props.link
 
     return (
-        <li key={id}><a href={href}>{label}</a></li>
+        <li><a href={href}>{label}</a></li>
     )
 }
 
